@@ -42,17 +42,29 @@ echo.
 echo [INFO] Компиляция Fortnite Ultimate Spoofer...
 echo [INFO] Применение оптимизаций для EAC bypass...
 
-g++ -std=c++17 -O3 -march=native -mtune=native ^
-    -static-libgcc -static-libstdc++ ^
+echo [INFO] Trying simple version first...
+g++ -std=c++17 -O2 -static-libgcc -static-libstdc++ ^
     -DUNICODE -D_UNICODE ^
     -DFORTNITE_OPTIMIZED ^
     -DEAC_BYPASS_2025 ^
     -I. ^
     -o build_fortnite/fortnite_spoofer.exe ^
-    fortnite_spoofer.cpp ^
+    fortnite_spoofer_simple.cpp ^
     -liphlpapi -lsetupapi -lcfgmgr32 -ladvapi32 ^
-    -lshell32 -luser32 -lwbemuuid -lole32 -loleaut32 ^
-    -lpsapi -lntdll -lkernel32
+    -lshell32 -luser32 -lpsapi -lkernel32
+
+if %errorLevel% neq 0 (
+    echo [WARNING] Simple version failed, trying advanced version...
+    g++ -std=c++17 -O2 -static-libgcc -static-libstdc++ ^
+        -DUNICODE -D_UNICODE ^
+        -DFORTNITE_OPTIMIZED ^
+        -DEAC_BYPASS_2025 ^
+        -I. ^
+        -o build_fortnite/fortnite_spoofer.exe ^
+        fortnite_spoofer.cpp ^
+        -liphlpapi -lsetupapi -lcfgmgr32 -ladvapi32 ^
+        -lshell32 -luser32 -lpsapi -lkernel32
+)
 
 if %errorLevel% neq 0 (
     echo [ERROR] Ошибка компиляции Fortnite спуффера!
