@@ -1,0 +1,210 @@
+{
+  "version": "2.0",
+  "app_name": "Game Spoofer",
+  "target_os": "Windows 11 24H2",
+  "settings": {
+    "auto_clean": true,
+    "backup_enabled": true,
+    "log_level": "INFO",
+    "temp_spoofing": true,
+    "revert_on_reboot": true
+  },
+  "spoofing_options": {
+    "spoof_hwid": true,
+    "spoof_mac": true,
+    "spoof_disk_serial": true,
+    "spoof_bios": false,
+    "clean_registry": true,
+    "clean_temp_files": true
+  },
+  "game_profiles": {
+    "Fortnite_2025": {
+      "name": "Fortnite Ultimate 2025",
+      "description": "Максимально оптимизированный профиль для Fortnite 2025 - обход EAC",
+      "priority": 1,
+      "anti_cheat": "EasyAntiCheat",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "cpu_pattern": "XXXXXXXXXXXXXXXX",
+      "motherboard_pattern": "XXXXXXXXXXXXXXXX",
+      "gpu_pattern": "XXXXXXXXXXXXXXXX",
+      "ram_pattern": "XXXXXXXXXXXXXXXX",
+      "advanced_spoofing": {
+        "wmi_queries": true,
+        "registry_deep_clean": true,
+        "memory_artifacts": true,
+        "process_hollowing_protection": true,
+        "tpm_spoofing": true,
+        "secure_boot_bypass": true,
+        "hypervisor_detection": true,
+        "timing_attacks_protection": true
+      },
+      "eac_specific": {
+        "driver_signatures": true,
+        "kernel_callbacks": true,
+        "system_service_table": true,
+        "pci_device_spoofing": true,
+        "acpi_table_modification": true,
+        "smbios_spoofing": true,
+        "cpuid_spoofing": true,
+        "rdtsc_hooking": true
+      },
+      "registry_keys_to_spoof": [
+        "HKLM\\HARDWARE\\DESCRIPTION\\System\\BIOS",
+        "HKLM\\HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Control\\SystemInformation",
+        "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+        "HKLM\\SOFTWARE\\Microsoft\\Cryptography",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Control\\ComputerName",
+        "HKLM\\SYSTEM\\HardwareConfig",
+        "HKLM\\HARDWARE\\DEVICEMAP\\Scsi",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\STORAGE",
+        "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Disk\\Enum"
+      ],
+      "wmi_classes_to_modify": [
+        "Win32_ComputerSystem",
+        "Win32_ComputerSystemProduct",
+        "Win32_BaseBoard",
+        "Win32_BIOS",
+        "Win32_Processor",
+        "Win32_PhysicalMemory",
+        "Win32_DiskDrive",
+        "Win32_NetworkAdapter",
+        "Win32_VideoController",
+        "Win32_SystemEnclosure",
+        "Win32_MotherboardDevice",
+        "Win32_PnPEntity"
+      ],
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Logs",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Config",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Crashes",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\Logs",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\webcache",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\Config",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\UnrealEngine\\*\\Saved\\Logs",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\CrashReportClient",
+        "C:\\Users\\%USERNAME%\\AppData\\Roaming\\EpicGamesLauncher",
+        "C:\\ProgramData\\Epic\\EpicGamesLauncher\\Data\\Manifests",
+        "C:\\ProgramData\\Epic\\UnrealEngineLauncher\\LauncherInstalled.dat",
+        "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Microsoft\\Windows\\INetCache",
+        "C:\\Windows\\Temp\\EpicGamesLauncher*",
+        "C:\\Windows\\Temp\\Fortnite*",
+        "C:\\Windows\\Prefetch\\FORTNITECLIENT*.pf",
+        "C:\\Windows\\Prefetch\\EPICGAMESLAUNCHER*.pf"
+      ],
+      "processes_to_terminate": [
+        "FortniteClient-Win64-Shipping.exe",
+        "EpicGamesLauncher.exe",
+        "EpicWebHelper.exe",
+        "CrashReportClient.exe",
+        "UnrealCEFSubProcess.exe"
+      ],
+      "services_to_restart": [
+        "EasyAntiCheat",
+        "BEService"
+      ]
+    },
+    "Valorant": {
+      "name": "Valorant",
+      "description": "Профиль для Valorant",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\VALORANT",
+        "C:\\Users\\%USERNAME%\\AppData\\Roaming\\VALORANT"
+      ]
+    },
+    "Apex Legends": {
+      "name": "Apex Legends",
+      "description": "Профиль для Apex Legends",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\Respawn",
+        "C:\\Users\\%USERNAME%\\Saved Games\\Respawn"
+      ]
+    },
+    "Call of Duty Warzone": {
+      "name": "Call of Duty Warzone",
+      "description": "Профиль для Call of Duty Warzone",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\Documents\\Call of Duty",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\Activision"
+      ]
+    },
+    "PUBG": {
+      "name": "PUBG",
+      "description": "Профиль для PUBG",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\TslGame",
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\PUBG"
+      ]
+    },
+    "CS2": {
+      "name": "Counter-Strike 2",
+      "description": "Профиль для Counter-Strike 2",
+      "hwid_pattern": "XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+      "mac_pattern": "XX:XX:XX:XX:XX:XX",
+      "disk_pattern": "XXXXXXXXXXXXXXXX",
+      "additional_cleanup": [
+        "C:\\Users\\%USERNAME%\\AppData\\Local\\Steam",
+        "C:\\Program Files (x86)\\Steam\\userdata"
+      ]
+    }
+  },
+  "registry_paths": {
+    "machine_guid": "SOFTWARE\\Microsoft\\Cryptography",
+    "install_date": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+    "network_adapters": "SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "disk_info": "HARDWARE\\DEVICEMAP\\Scsi",
+    "bios_info": "HARDWARE\\DESCRIPTION\\System\\BIOS",
+    "system_info": "HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0"
+  },
+  "cleanup_paths": [
+    "C:\\Windows\\Temp",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\Temp",
+    "C:\\Windows\\Prefetch",
+    "C:\\Windows\\Logs\\CBS",
+    "C:\\Windows\\Logs\\DISM",
+    "C:\\Windows\\Logs\\WindowsUpdate",
+    "C:\\ProgramData\\Microsoft\\Windows\\WER"
+  ],
+  "backup_settings": {
+    "backup_directory": "backups",
+    "max_backups": 5,
+    "auto_backup": true,
+    "backup_registry": true,
+    "backup_files": true
+  },
+  "security": {
+    "require_admin": true,
+    "check_antivirus": false,
+    "create_restore_point": true,
+    "verify_windows_version": true
+  },
+  "ui_settings": {
+    "theme": "default",
+    "language": "ru",
+    "window_size": "800x600",
+    "auto_generate": true,
+    "show_advanced": false
+  },
+  "logging": {
+    "log_file": "spoofer.log",
+    "max_log_size": "10MB",
+    "log_rotation": true,
+    "console_output": true
+  }
+}

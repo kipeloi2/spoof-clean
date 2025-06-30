@@ -1,0 +1,271 @@
+{
+  "version": "2.0_FORTNITE_EDITION",
+  "app_name": "Fortnite Ultimate Spoofer 2025",
+  "target_game": "Fortnite",
+  "anti_cheat": "EasyAntiCheat",
+  "last_updated": "2025-06-30",
+  "optimization_level": "MAXIMUM",
+  
+  "fortnite_specific": {
+    "game_version": "Chapter 5 Season 3",
+    "eac_version": "EAC 2025.6",
+    "epic_launcher_version": "15.17.1",
+    "unreal_engine": "UE 5.4",
+    "supported_platforms": ["Windows 11 24H2", "Windows 11 23H2", "Windows 10 22H2"]
+  },
+  
+  "eac_bypass_2025": {
+    "driver_signature_enforcement": true,
+    "kernel_callback_hooks": true,
+    "system_service_table_hooks": true,
+    "pci_device_enumeration": true,
+    "acpi_table_modification": true,
+    "smbios_spoofing": true,
+    "cpuid_instruction_hooks": true,
+    "rdtsc_timing_hooks": true,
+    "hypervisor_detection_bypass": true,
+    "vm_detection_bypass": true,
+    "debugger_detection_bypass": true,
+    "memory_integrity_bypass": true,
+    "tpm_attestation_bypass": true,
+    "secure_boot_bypass": true
+  },
+  
+  "hardware_profiles_2025": {
+    "gaming_pc_high_end": {
+      "cpu_models": [
+        "Intel(R) Core(TM) i9-14900K CPU @ 3.20GHz",
+        "Intel(R) Core(TM) i7-14700K CPU @ 3.40GHz", 
+        "AMD Ryzen 9 7950X 16-Core Processor",
+        "AMD Ryzen 7 7800X3D 8-Core Processor",
+        "Intel(R) Core(TM) i5-14600K CPU @ 3.50GHz"
+      ],
+      "gpu_models": [
+        "NVIDIA GeForce RTX 4090",
+        "NVIDIA GeForce RTX 4080 SUPER",
+        "NVIDIA GeForce RTX 4070 Ti SUPER",
+        "AMD Radeon RX 7900 XTX",
+        "AMD Radeon RX 7800 XT"
+      ],
+      "motherboard_models": [
+        "ASUS ROG STRIX Z790-E GAMING WIFI",
+        "MSI MAG Z790 TOMAHAWK WIFI",
+        "Gigabyte Z790 AORUS ELITE AX",
+        "ASRock Z790 Pro RS",
+        "ASUS TUF Gaming X670E-PLUS WIFI"
+      ],
+      "ram_configs": [
+        "32GB DDR5-6000",
+        "32GB DDR5-5600", 
+        "16GB DDR5-6400",
+        "64GB DDR5-5200"
+      ]
+    },
+    
+    "gaming_pc_mid_range": {
+      "cpu_models": [
+        "Intel(R) Core(TM) i5-13600K CPU @ 3.50GHz",
+        "AMD Ryzen 5 7600X 6-Core Processor",
+        "Intel(R) Core(TM) i7-13700F CPU @ 2.10GHz",
+        "AMD Ryzen 7 5800X3D 8-Core Processor"
+      ],
+      "gpu_models": [
+        "NVIDIA GeForce RTX 4060 Ti",
+        "NVIDIA GeForce RTX 4060",
+        "AMD Radeon RX 7600 XT",
+        "NVIDIA GeForce RTX 3070"
+      ],
+      "motherboard_models": [
+        "MSI B650 GAMING PLUS WIFI",
+        "ASUS PRIME B550M-A WIFI",
+        "Gigabyte B650M DS3H",
+        "ASRock B550M PRO4"
+      ]
+    }
+  },
+  
+  "realistic_serials_2025": {
+    "ssd_nvme": {
+      "samsung": ["S7S2NS0X", "S7S2NX0X", "S7S1NS0X"],
+      "western_digital": ["WDS100T1X0E", "WDS200T1X0E", "WDS500G1X0E"],
+      "crucial": ["CT1000P5SSD8", "CT2000P5SSD8", "CT500P5SSD8"],
+      "intel": ["SSDPEKNU512GZ", "SSDPEKNU010TZ", "SSDPEKNU020TZ"],
+      "kingston": ["SNV2S1000G", "SNV2S2000G", "SNV2S500G"]
+    },
+    
+    "network_adapters": {
+      "intel_wifi6e": ["00:15:5D", "8C:16:45", "9C:2A:70"],
+      "realtek": ["00:E0:4C", "10:7B:44", "2C:4D:54"],
+      "qualcomm": ["00:03:7F", "04:EA:56", "28:6C:07"],
+      "broadcom": ["00:10:18", "B4:99:BA", "E4:F4:C6"]
+    },
+    
+    "motherboard_serials": {
+      "asus": ["MB-1234567890", "MS-7C95", "ASU-"],
+      "msi": ["MS-7D25", "MS-7C95", "MSI-"],
+      "gigabyte": ["GB-BXBT-2807", "GB-", "GBT-"],
+      "asrock": ["ASR-B550M", "ASR-", "ASK-"]
+    }
+  },
+  
+  "fortnite_cleanup_paths_2025": [
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Logs",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Config\\WindowsClient",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Crashes",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\Cloud",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\FortniteGame\\Saved\\LMS",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\Logs",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\webcache",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\EpicGamesLauncher\\Saved\\Config",
+    "C:\\Users\\%USERNAME%\\AppData\\Roaming\\EpicGamesLauncher",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\UnrealEngine\\5.4\\Saved\\Logs",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\UnrealEngine\\Common\\Analytics",
+    "C:\\Users\\%USERNAME%\\AppData\\Local\\CrashReportClient",
+    "C:\\ProgramData\\Epic\\EpicGamesLauncher\\Data\\EMS",
+    "C:\\ProgramData\\Epic\\EpicGamesLauncher\\Data\\Manifests",
+    "C:\\ProgramData\\Epic\\UnrealEngineLauncher\\LauncherInstalled.dat",
+    "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Microsoft\\Windows\\INetCache",
+    "C:\\Windows\\Temp\\EpicGamesLauncher*",
+    "C:\\Windows\\Temp\\Fortnite*",
+    "C:\\Windows\\Temp\\UnrealEngine*",
+    "C:\\Windows\\Prefetch\\FORTNITECLIENT*.pf",
+    "C:\\Windows\\Prefetch\\EPICGAMESLAUNCHER*.pf",
+    "C:\\Windows\\Prefetch\\UNREALCEFSUBPROCESS*.pf",
+    "C:\\Windows\\Prefetch\\CRASHREPORTCLIENT*.pf"
+  ],
+  
+  "registry_keys_eac_2025": [
+    "HKLM\\HARDWARE\\DESCRIPTION\\System\\BIOS",
+    "HKLM\\HARDWARE\\DESCRIPTION\\System\\CentralProcessor\\0",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\STORAGE",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\SystemInformation",
+    "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+    "HKLM\\SOFTWARE\\Microsoft\\Cryptography",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\ComputerName",
+    "HKLM\\SYSTEM\\HardwareConfig",
+    "HKLM\\HARDWARE\\DEVICEMAP\\Scsi",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Disk\\Enum",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e972-e325-11ce-bfc1-08002be10318}",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96a-e325-11ce-bfc1-08002be10318}",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e967-e325-11ce-bfc1-08002be10318}"
+  ],
+  
+  "wmi_classes_to_spoof": [
+    "Win32_ComputerSystem",
+    "Win32_ComputerSystemProduct",
+    "Win32_BaseBoard", 
+    "Win32_BIOS",
+    "Win32_Processor",
+    "Win32_PhysicalMemory",
+    "Win32_DiskDrive",
+    "Win32_NetworkAdapter",
+    "Win32_VideoController",
+    "Win32_SystemEnclosure",
+    "Win32_MotherboardDevice",
+    "Win32_PnPEntity",
+    "Win32_USBController",
+    "Win32_SoundDevice",
+    "Win32_SystemSlot"
+  ],
+  
+  "fortnite_processes_2025": [
+    "FortniteClient-Win64-Shipping.exe",
+    "EpicGamesLauncher.exe",
+    "EpicWebHelper.exe", 
+    "CrashReportClient.exe",
+    "UnrealCEFSubProcess.exe",
+    "EasyAntiCheat.exe",
+    "EACService.exe",
+    "FortniteClient-Win64-Shipping_EAC.exe"
+  ],
+  
+  "quick_profiles": {
+    "competitive": {
+      "name": "🏆 Competitive Gaming",
+      "description": "Максимальная производительность для соревновательной игры",
+      "hardware_profile": "gaming_pc_high_end",
+      "eac_bypass_level": "maximum",
+      "stealth_mode": false,
+      "performance_priority": true
+    },
+    
+    "casual": {
+      "name": "🎪 Casual Gaming",
+      "description": "Сбалансированные настройки для обычной игры", 
+      "hardware_profile": "gaming_pc_mid_range",
+      "eac_bypass_level": "standard",
+      "stealth_mode": false,
+      "performance_priority": false
+    },
+    
+    "streamer": {
+      "name": "🔥 Streamer Mode",
+      "description": "Оптимизация для стриминга с защитой приватности",
+      "hardware_profile": "gaming_pc_high_end", 
+      "eac_bypass_level": "maximum",
+      "stealth_mode": true,
+      "privacy_protection": true
+    },
+    
+    "maximum_security": {
+      "name": "🛡️ Maximum Security",
+      "description": "Максимальная защита и скрытность",
+      "hardware_profile": "gaming_pc_mid_range",
+      "eac_bypass_level": "maximum",
+      "stealth_mode": true,
+      "deep_clean": true,
+      "vm_protection": true
+    }
+  },
+  
+  "detection_evasion_2025": {
+    "timing_attacks": {
+      "rdtsc_hook": true,
+      "queryperformancecounter_hook": true,
+      "gettickcount_hook": true,
+      "random_delays": true
+    },
+    
+    "memory_protection": {
+      "heap_randomization": true,
+      "stack_randomization": true,
+      "dll_randomization": true,
+      "process_hollowing_protection": true
+    },
+    
+    "vm_detection_bypass": {
+      "hypervisor_cpuid": true,
+      "vm_registry_keys": true,
+      "vm_files_detection": true,
+      "vm_processes_detection": true,
+      "vm_services_detection": true
+    }
+  },
+  
+  "logging": {
+    "log_file": "fortnite_logs/spoofer.log",
+    "max_log_size": "50MB",
+    "log_rotation": true,
+    "console_output": true,
+    "debug_mode": false
+  },
+  
+  "backup_settings": {
+    "backup_directory": "fortnite_backups",
+    "max_backups": 10,
+    "auto_backup": true,
+    "backup_registry": true,
+    "backup_files": true,
+    "create_restore_point": true
+  },
+  
+  "security_warnings": {
+    "require_admin": true,
+    "check_antivirus": true,
+    "verify_windows_version": true,
+    "warn_about_risks": true,
+    "educational_purpose_only": true
+  }
+}
